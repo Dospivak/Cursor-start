@@ -9,7 +9,7 @@ You'll need to install three things on your computer:
 2. [MySQL](https://dev.mysql.com/downloads/) - Where we'll store our data
 3. [Node.js](https://nodejs.org) - Helps with making the website look pretty
 
-## �� Getting the Code
+##  Getting the Code
 
 The easiest way to get started is to use Cursor's AI to help you:
 
@@ -40,57 +40,45 @@ We've included lots of helpful stuff:
 
 ## 🎯 Setting Up Your Project
 
-### 1. Open in Cursor
-- Open Cursor
-- Click "Open Folder" (or press `Cmd/Ctrl + O`)
-- Find and select the folder you just downloaded
+### 1. Open Your Project
+1. Open Cursor
+2. Press `Cmd/Ctrl + K` (or click the chat button)
+3. Type:
+   ```
+   Open the folder I just downloaded
+   ```
 
-### 2. Set Up Your Coding Environment
-Open the terminal in Cursor (press ``Cmd/Ctrl + ` ``) and type these commands:
+### 2. Set Up Your Environment
+1. Press `Cmd/Ctrl + K` and type:
+   ```
+   Help me set up a Python virtual environment and install the project dependencies
+   ```
+   The AI will guide you through creating a virtual environment and installing everything you need!
 
-```bash
-# Create a special environment for your project
-python -m venv venv
+### 3. Configure Your Database
+1. Press `Cmd/Ctrl + K` and type:
+   ```
+   Help me set up the database configuration file
+   ```
+2. When the AI shows you the `.env` file, fill in your database details:
+   ```
+   DB_HOST=localhost
+   DB_PORT=3306
+   DB_NAME=your_database_name
+   DB_USER=your_username
+   DB_PASSWORD=your_password
 
-# On Mac/Linux, type:
-source venv/bin/activate
-# On Windows, type:
-venv\Scripts\activate
+   DEBUG=True
+   APP_SECRET_KEY=make-up-a-random-string
+   ```
 
-# Install Python packages
-pip install -r requirements.txt
-
-# Install styling tools
-npm install
-
-# Copy settings file
-cp .env.example .env
-```
-
-### 3. Set Up Your Database
-Open the `.env` file and fill in your database info:
-```
-DB_HOST=localhost
-DB_PORT=3306
-DB_NAME=your_database_name
-DB_USER=your_username
-DB_PASSWORD=your_password
-
-DEBUG=True
-APP_SECRET_KEY=make-up-a-random-string
-```
-
-### 4. Start the Project
-In the terminal:
-```bash
-# Start the style builder
-npm run watch:css
-
-# In a new terminal, start the website
-python src/main.py
-```
-
-Visit `http://localhost:5000` in your web browser to see your website!
+### 4. Start the Website
+1. Press `Cmd/Ctrl + K` and type:
+   ```
+   Help me start the development server and CSS builder
+   ```
+2. The AI will help you start everything you need!
+3. Once everything is running, open your web browser and go to: `http://localhost:5000`
 
 ## 🎨 Cool Things You Can Do with Cursor
 
