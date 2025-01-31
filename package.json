@@ -1,0 +1,16 @@
+{
+  "name": "python-mysql-template",
+  "version": "1.0.0",
+  "description": "Python MySQL project template with Tailwind CSS",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/static/css/input.css -o ./src/static/css/output.css --minify",
+    "watch:css": "tailwindcss -i ./src/static/css/input.css -o ./src/static/css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33"
+  }
+} 

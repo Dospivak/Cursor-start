@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Python MySQL Template{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+<body class="min-h-screen bg-gray-50">
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold text-primary-600">Your App</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-white shadow mt-8">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-500 text-sm">
+                &copy; {% now 'Y' %} Your Company. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html> 

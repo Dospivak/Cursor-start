@@ -1,0 +1,139 @@
+{
+    "python": {
+        "style": {
+            "line_length": 88,
+            "indent_size": 4,
+            "quote_style": "single",
+            "docstring_style": "google"
+        },
+        "linting": {
+            "enabled": true,
+            "tools": ["flake8", "mypy", "pylint"],
+            "ignore_rules": ["E203", "W503"]
+        },
+        "formatting": {
+            "enabled": true,
+            "tools": ["black", "isort"],
+            "on_save": true
+        },
+        "debugging": {
+            "enabled": true,
+            "breakpoint_style": "python",
+            "tools": ["pdb", "ipdb"],
+            "logging": {
+                "enabled": true,
+                "level": "DEBUG",
+                "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            },
+            "error_handling": {
+                "raise_exceptions": true,
+                "debug_mode": true,
+                "traceback_depth": "full"
+            },
+            "best_practices": {
+                "use_debugger": true,
+                "use_logging": true,
+                "verbose_exceptions": true,
+                "debug_comments": true
+            }
+        },
+        "best_practices": {
+            "imports": {
+                "order": [
+                    "standard_library",
+                    "third_party",
+                    "local"
+                ],
+                "style": "grouped"
+            },
+            "typing": {
+                "required": true,
+                "check_untyped_defs": true
+            },
+            "docstrings": {
+                "required": true,
+                "style": "google",
+                "required_sections": [
+                    "Args",
+                    "Returns",
+                    "Raises"
+                ]
+            }
+        },
+        "code_templates": {
+            "class": [
+                "class ${name}:",
+                "    \"\"\"${description}",
+                "",
+                "    Args:",
+                "        ${args}",
+                "    \"\"\"",
+                "",
+                "    def __init__(self${params}) -> None:",
+                "        ${init_body}",
+                ""
+            ],
+            "function": [
+                "def ${name}(${params}) -> ${return_type}:",
+                "    \"\"\"${description}",
+                "",
+                "    Args:",
+                "        ${args}",
+                "",
+                "    Returns:",
+                "        ${returns}",
+                "",
+                "    Raises:",
+                "        ${raises}",
+                "    \"\"\"",
+                "    ${body}",
+                ""
+            ]
+        }
+    },
+    "database": {
+        "naming": {
+            "tables": "snake_case",
+            "columns": "snake_case",
+            "primary_keys": "id",
+            "foreign_keys": "${table_name}_id"
+        },
+        "best_practices": {
+            "use_transactions": true,
+            "connection_pooling": true,
+            "parameterized_queries": true,
+            "error_handling": true
+        }
+    },
+    "git": {
+        "commit_message": {
+            "format": "type(scope): description",
+            "types": [
+                "feat",
+                "fix",
+                "docs",
+                "style",
+                "refactor",
+                "test",
+                "chore"
+            ],
+            "max_length": 72
+        },
+        "branch_naming": {
+            "format": "${type}/${description}",
+            "types": [
+                "feature",
+                "bugfix",
+                "hotfix",
+                "release"
+            ]
+        }
+    },
+    "editor": {
+        "trim_trailing_whitespace": true,
+        "insert_final_newline": true,
+        "rulers": [88],
+        "show_line_numbers": true,
+        "word_wrap": false
+    }
+} 
