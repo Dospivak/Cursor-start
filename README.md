@@ -222,4 +222,4 @@ Remember:
 - Use Cursor's AI assistance whenever you're stuck
 - Experiment with different AI prompts
 - Take advantage of code completion
-- Use the integrated debugger 
+- Use the integrated debugger
